@@ -1,0 +1,15 @@
+2024/10/07-11:20:27.650 587c Reusing MANIFEST C:\Users\nmercado\Documents\Scripts\chrome_data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/07-11:20:27.651 587c Recovering log #996
+2024/10/07-11:20:27.668 587c Reusing old log C:\Users\nmercado\Documents\Scripts\chrome_data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000996.log 
+2024/10/07-11:20:29.356 848 Level-0 table #1002: started
+2024/10/07-11:20:29.366 848 Level-0 table #1002: 396781 bytes OK
+2024/10/07-11:20:29.366 848 Delete type=0 #996
+2024/10/07-11:20:29.367 587c Manual compaction at level-0 from '\x00\x91\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x92\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/07-11:20:30.858 4a4c Compacting 1@1 + 2@2 files
+2024/10/07-11:20:30.950 4a4c Generated table #1003@1: 56976 keys, 2288920 bytes
+2024/10/07-11:20:30.969 4a4c Generated table #1004@1: 14300 keys, 273587 bytes
+2024/10/07-11:20:30.969 4a4c Compacted 1@1 + 2@2 files => 2562507 bytes
+2024/10/07-11:20:30.970 4a4c compacted to: files[ 0 0 2 0 0 0 0 ]
+2024/10/07-11:20:30.970 4a4c Delete type=2 #998
+2024/10/07-11:20:30.970 4a4c Delete type=2 #999
+2024/10/07-11:20:30.971 4a4c Delete type=2 #1002

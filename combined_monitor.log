@@ -1,0 +1,818 @@
+2024-10-07 11:20:24,446:INFO:====== WebDriver manager ======
+2024-10-07 11:20:25,538:INFO:Get LATEST chromedriver version for google-chrome
+2024-10-07 11:20:25,541:DEBUG:Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-10-07 11:20:25,712:DEBUG:https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 7616
+2024-10-07 11:20:25,712:INFO:Get LATEST chromedriver version for google-chrome
+2024-10-07 11:20:25,712:DEBUG:Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-10-07 11:20:25,781:DEBUG:https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 7616
+2024-10-07 11:20:25,802:INFO:Driver [C:\Users\nmercado\.wdm\drivers\chromedriver\win64\129.0.6668.89\chromedriver-win32/chromedriver.exe] found in cache
+2024-10-07 11:20:25,803:DEBUG:Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\nmercado\.wdm\drivers\chromedriver\win64\129.0.6668.89\chromedriver-win32/chromedriver.exe
+2024-10-07 11:20:25,809:DEBUG:Started executable: `C:\Users\nmercado\.wdm\drivers\chromedriver\win64\129.0.6668.89\chromedriver-win32/chromedriver.exe` in a child process with pid: 12912 using 0 to output -3
+2024-10-07 11:20:26,344:DEBUG:POST http://localhost:59866/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--user-data-dir=C:\\Users\\nmercado\\Documents\\Scripts\\chrome_data']}}}}
+2024-10-07 11:20:26,345:DEBUG:Starting new HTTP connection (1): localhost:59866
+2024-10-07 11:20:27,131:DEBUG:http://localhost:59866 "POST /session HTTP/11" 200 0
+2024-10-07 11:20:27,131:DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.90","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"C:\\Users\\nmercado\\Documents\\Scripts\\chrome_data"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:59869"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"514dba7d12cbf918a02c60fb048527d3"}} | headers=HTTPHeaderDict({'Content-Length': '868', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-07 11:20:27,132:DEBUG:Finished Request
+2024-10-07 11:20:27,132:DEBUG:POST http://localhost:59866/session/514dba7d12cbf918a02c60fb048527d3/url {'url': 'https://web.whatsapp.com'}
+2024-10-07 11:20:28,414:DEBUG:http://localhost:59866 "POST /session/514dba7d12cbf918a02c60fb048527d3/url HTTP/11" 200 0
+2024-10-07 11:20:28,414:DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-07 11:20:28,414:DEBUG:Finished Request
+2024-10-07 11:20:34,206:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:20:34,270:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:21:27,704:INFO:====== WebDriver manager ======
+2024-10-07 11:21:28,750:INFO:Get LATEST chromedriver version for google-chrome
+2024-10-07 11:21:28,750:DEBUG:Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-10-07 11:21:28,841:DEBUG:https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 7616
+2024-10-07 11:21:28,844:INFO:Get LATEST chromedriver version for google-chrome
+2024-10-07 11:21:28,845:DEBUG:Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-10-07 11:21:28,912:DEBUG:https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 7616
+2024-10-07 11:21:28,912:INFO:Driver [C:\Users\nmercado\.wdm\drivers\chromedriver\win64\129.0.6668.89\chromedriver-win32/chromedriver.exe] found in cache
+2024-10-07 11:21:28,912:DEBUG:Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\nmercado\.wdm\drivers\chromedriver\win64\129.0.6668.89\chromedriver-win32/chromedriver.exe
+2024-10-07 11:21:28,928:DEBUG:Started executable: `C:\Users\nmercado\.wdm\drivers\chromedriver\win64\129.0.6668.89\chromedriver-win32/chromedriver.exe` in a child process with pid: 11632 using 0 to output -3
+2024-10-07 11:21:29,443:DEBUG:POST http://localhost:59903/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--user-data-dir=C:\\Users\\nmercado\\Documents\\Scripts\\chrome_data']}}}}
+2024-10-07 11:21:29,443:DEBUG:Starting new HTTP connection (1): localhost:59903
+2024-10-07 11:21:30,152:DEBUG:http://localhost:59903 "POST /session HTTP/11" 200 0
+2024-10-07 11:21:30,152:DEBUG:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.90","chrome":{"chromedriverVersion":"129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503})","userDataDir":"C:\\Users\\nmercado\\Documents\\Scripts\\chrome_data"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:59906"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"6ca487bb8e9b8c1ab392c2a13bbf8fc8"}} | headers=HTTPHeaderDict({'Content-Length': '868', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-07 11:21:30,152:DEBUG:Finished Request
+2024-10-07 11:21:30,152:DEBUG:POST http://localhost:59903/session/6ca487bb8e9b8c1ab392c2a13bbf8fc8/url {'url': 'https://web.whatsapp.com'}
+2024-10-07 11:21:31,215:DEBUG:http://localhost:59903 "POST /session/6ca487bb8e9b8c1ab392c2a13bbf8fc8/url HTTP/11" 200 0
+2024-10-07 11:21:31,215:DEBUG:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-07 11:21:31,215:DEBUG:Finished Request
+2024-10-07 11:21:35,109:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:21:35,109:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:22:05,117:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:22:05,128:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:22:35,133:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:22:35,137:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:23:05,142:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:23:05,148:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:23:35,152:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:23:35,158:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:24:05,159:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:24:05,159:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:24:35,167:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:24:35,167:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:25:05,175:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:25:05,184:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:25:35,188:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:25:35,192:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:26:05,194:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:26:05,194:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:26:35,202:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:26:35,202:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:27:05,217:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:27:05,221:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:27:35,221:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:27:35,231:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:28:05,231:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:28:05,239:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:28:35,246:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:28:35,247:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:29:05,255:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:29:05,258:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:29:35,262:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:29:35,267:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:30:05,268:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:30:05,268:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:30:35,284:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:30:35,289:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:31:05,293:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:31:05,301:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:31:35,301:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:31:35,310:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:32:05,311:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:32:05,316:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:32:35,327:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:32:35,332:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:33:05,332:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:33:05,332:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:33:35,351:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:33:35,351:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:34:05,357:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:34:05,364:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:34:35,368:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:34:35,368:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:35:05,384:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:35:05,390:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:35:35,394:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:35:35,400:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:36:05,404:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:36:05,416:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:36:35,417:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:36:35,432:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:37:05,434:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:37:05,441:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:37:35,448:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:37:35,448:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:38:05,454:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:38:05,468:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:38:35,479:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:38:35,479:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:39:05,488:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:39:05,488:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:39:35,505:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:39:35,505:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-07 11:40:05,514:ERROR:Error al monitorizar el stock: (pyodbc.ProgrammingError) ('42S02', "[42S02] [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.STOCK_TABLE'. (208) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        COD_ART, DESCRIPCION, StockActual, STK_MIN
+    FROM 
+        dbo.STOCK_TABLE
+    WHERE 
+        StockActual < STK_MIN
+    ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-07 11:40:05,514:ERROR:Error al monitorizar el mantenimiento: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Conversion failed when converting the varchar value 'PENDIENTE' to data type int. (245) (SQLExecDirectW)")
+[SQL: 
+    SELECT 
+        ID_OTM, FECHA_CARGA, ESTADO, DESCRIPCION_CORTA, ID_MAQUINA, ID_OPERARIO
+    FROM 
+        dbo.MANT_OTM
+    WHERE 
+        ESTADO = 'PENDIENTE'
+    ]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
